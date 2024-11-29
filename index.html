@@ -19,10 +19,11 @@
     <title>Document</title>
 </head>
 
+
 <body>
     <!-- Header-->
     <header id="navbar"
-        class="sticky top-0 duration-300 z-[100] bg-sectionColor text-slate-800 dark:bg-transparent rounded-[8px] shadow-lg dark:shadow-2xl dark:text-slate-100">
+        class="fixed top-0 right-0 left-0 duration-300 z-[100] bg-sectionColor text-slate-800 dark:bg-transparent rounded-[8px] shadow-lg dark:shadow-2xl dark:text-slate-100">
         <nav class="relative container flex justify-between items-center">
             <div class="py-5">
                 <img src="images/logo.png" alt="logo" id="logo" class="w-10 md:w-14">
@@ -69,7 +70,7 @@
     </header>
     <main>
         <!-- Hero Section -->
-        <section id="hero" class="relative py-5">
+        <section id="hero" class="relative py-5 mt-12 md:mt-14 sm:mt-16">
             <!-- blog -->
             <div
                 class="absolute right-0 top-[20px] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
@@ -238,21 +239,23 @@
                     both you and your customers.</p>
             </div>
             <div
-                class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor dark:bg-darkSectionColor border border-primaryColor overflow-hidden transition md:h-12 md:text-base">
+                class="relative w-full max-w-lg mx-auto my-10 h-10 text-xs flex items-center justify-between px-4 rounded-full bg-sectionColor dark:bg-darkSectionColor border border-primaryColor transition md:h-12 md:text-base">
                 <!-- Indicator -->
                 <div
-                    class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-primaryColorLight md:h-11">
+                    class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-primaryColorLight transition-all duration-300 md:h-11">
                 </div>
-                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6 text-whiteColor"
+                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10 text-whiteColor"
                     data-tabs="all">All</button>
-                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="tech">Smart
+                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10" data-tabs="tech">Smart
                     Tech</button>
-                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="food">Orders
+                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10" data-tabs="food">Orders
                     Food</button>
-                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6"
+                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10"
                     data-tabs="travel">Travel</button>
-                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="app">App</button>
+                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10"
+                    data-tabs="app">App</button>
             </div>
+
             <div class="mt-6 relative rounded-3xl">
                 <!-- Blod -->
                 <div
@@ -705,8 +708,49 @@
                 </form>
             </div>
         </section>
-
     </main>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-sectionColor dark:bg-darkSectionColor py-10">
+        <div class="container flex flex-col items-center gap-5">
+            <div class="py-5">
+                <img src="images//logo.png" alt="footer logo" class="w-32">
+            </div>
+            <div class="">
+                <ul class="flex flex-wrap justify-center items-center space-x-3">
+                    <li>
+                        <a href="#quality_services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#recent_works" class="nav-link">Works</a>
+                    </li>
+                    <li>
+                        <a href="#exp_edu" class="nav-link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#blogs" class="nav-link">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="text-primaryColorLight">
+                <p class="">&copy;2024 All rights reserved by <span class="font-bold">Quoc Tien</span></p>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#" id="scroll-up" class="fixed right-10 bottom-4 bg-primaryColor px-2 py-1 rounded-full text-lg text-whiteColor z-[9999] hover:-translate-y-1 ease-in duration-200 md:px-4 md:py-2">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
+    
+    
+    
+
     <script src="js/main.js"></script>
 </body>
 

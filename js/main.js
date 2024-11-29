@@ -87,3 +87,25 @@ tabs.forEach((tab) => {
     });
 });
 
+
+/*********** Scroll Up ***************/
+const scrollUpBtn = document.getElementById('scroll-up');
+
+// Hàm cuộn lên
+const scrollUp = () => {
+    if (window.scrollY >= 250) {
+        // Hiển thị nút khi cuộn qua 250px
+        scrollUpBtn.classList.remove('translate-y-full');
+        scrollUpBtn.classList.add('translate-y-0');
+    } else {
+        // Ẩn nút khi cuộn lên trên
+        scrollUpBtn.classList.add('translate-y-full');
+        scrollUpBtn.classList.remove('translate-y-0');
+    }
+};
+
+// Lắng nghe sự kiện cuộn
+window.addEventListener('scroll', scrollUp);
+
+
+

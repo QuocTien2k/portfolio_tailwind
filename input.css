@@ -10,6 +10,11 @@
     body {
         @apply dark:bg-darkBodyColor dark:text-textColor text-primaryColor overflow-x-hidden font-poppins tracking-wider;
     }
+    html, 
+    body {
+        overflow-x: hidden;
+    }
+    
     section{
         @apply py-16 md:pt-28 md:pb-20;
     }
