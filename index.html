@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS-->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Remix icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+        integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- Header-->
+    <header id="navbar"
+        class="sticky top-0 duration-300 z-[100] bg-sectionColor text-slate-800 dark:bg-transparent rounded-[8px] shadow-lg dark:shadow-2xl dark:text-slate-100">
+        <nav class="relative container flex justify-between items-center">
+            <div class="py-5">
+                <img src="images/logo.png" alt="logo" id="logo" class="w-10 md:w-14">
+                <img src="images/logo_white.png" alt="white-logo" id="white-logo" class="w-10 hidden">
+            </div>
+            <div id="nav-menu"
+                class="hidden absolute top-0 left-0 bg-primaryColor w-full py-24 lg:block lg:bg-transparent lg:static lg:py-0 lg:border-none lg:w-auto lg:ml-auto">
+                <ul class="flex flex-col items-center text-center gap-8 lg:flex-row lg:gap-5">
+                    <li>
+                        <a href="#quality_services" class="nav-link">Services</a>
+                    </li>
+                    <li>
+                        <a href="#recent_works" class="nav-link">Works</a>
+                    </li>
+                    <li>
+                        <a href="#exp_edu" class="nav-link">Resume</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="nav-link">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#blogs" class="nav-link">Blogs</a>
+                    </li>
+                    <li>
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li>
+                        <button class="btn ml-4"><span class="z-20">Hire me!</span></button>
+                    </li>
+                </ul>
+                <div id="nav-close"
+                    class="absolute top-6 right-3 text-whiteColor text-3xl cursor-pointer md:right-8 lg:hidden">
+                    <i class="ri-close-line"></i>
+                </div>
+            </div>
+            <div class="flex items-center gap-5">
+                <i class="ri-moon-line cursor-pointer ml-4 text-2xl" id="theme-toggle"></i>
+
+                <div id="hamburger" class="lg:hidden">
+                    <i class="ri-menu-2-line cursor-pointer text-2xl"></i>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="relative py-5">
+            <!-- blog -->
+            <div
+                class="absolute right-0 top-[20px] w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+            </div>
+            <div class="container">
+                <!-- bg image -->
+                <div class="hidden md:block absolute top-0 left-[30%] lg:left-[35%] animate-scaleAnimation">
+                    <p
+                        class="font-Londrina text-[400px] lg:text-[450px] text-primaryColorLight uppercase -z-10 opacity-5">
+                        hello</p>
+                </div>
+                <!-- content -->
+                <div class="flex items-center gap-5">
+                    <div class="space-y-2 md:w-1/2">
+                        <h3 class="text-2xl font-bold md:text-3xl lg:text-4xl">I am Quoc Tien</h3>
+                        <h1>
+                            <span class="title">Intern Front End Website 2024 +</span>
+                            <br>
+                            <span class="title">Gamer</span>
+                        </h1>
+                        <div class="relative md:hidden flex justify-center">
+                            <!-- blob -->
+                            <div
+                                class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+                            </div>
+                            <img src="images/person.jpg" alt="person"
+                                class="my-10 md:max-w-full lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                        </div>
+                        <p class="max-w-xl text-xl pb-5">I explore and solve user experience issues, focusing on
+                            creating simple and effective
+                            solutions that make it easier to connect people</p>
+                        <div class="flex items-center flex-wrap gap-5">
+                            <button class="btn_outline">Download CV <i class="fa-solid fa-download"></i></button>
+                            <div class="flex items-center gap-5">
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-facebook z-10"></i>
+                                </div>
+                                <div class="social-icon">
+                                    <i class="fa-brands fa-github z-10"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- image in PC-->
+                    <div class="relative hidden md:w-1/2 md:flex justify-center">
+                        <!-- blob -->
+                        <div
+                            class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+                        </div>
+                        <img src="images/person.jpg" alt="person"
+                            class="my-10 md:max-w-full lg:max-w-[80%] duration-300 origin-center rotate-[4.5deg] border-2 border-primaryColor rounded-[38px] hover:rotate-0 hover:border-primaryColorLight">
+                    </div>
+
+                </div>
+                <!-- footer -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">0</p>
+                        <p>
+                            Years of <br> Experience
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">3</p>
+                        <p>
+                            Projects <br> Completed
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">5+</p>
+                        <p>
+                            Skills <br> Learned
+                        </p>
+                    </div>
+
+                    <div class="flex items-center gap-3">
+                        <p class="text-5xl lg:text-6xl font-bold">∞</p>
+                        <p>
+                            Passion for <br> Learning
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- My Quality Services -->
+        <section id="quality_services" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container">
+                <div class="flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">My Quality Services</h2>
+                    <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that
+                        inspires both
+                        you and your customers.</p>
+                </div>
+                <!-- List section -->
+                <div class="my-10">
+                    <!-- item 1 -->
+                    <div class="service_item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">01</p>
+                            <p>Simple Apartment Search & Purchase</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <p>Explore apartments for rent or purchase effortlessly with our straightforward and
+                                user-friendly platform.</p>
+                        </div>
+                    </div>
+                    <!-- item 2 -->
+                    <div class="service_item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">02</p>
+                            <p>Delicious Food, Easy Orders</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <p>Order your favorite fried chicken, burgers, or pizza with ease. Enjoy a user-friendly,
+                                responsive platform for a seamless shopping cart experience.</p>
+                        </div>
+                    </div>
+                    <!-- item 3 -->
+                    <div class="service_item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">03</p>
+                            <p>Smart Tech, Seamless Shopping</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <p>Discover and shop for the latest PCs, laptops, headphones, and accessories with ease.
+                                Enjoy features like user-friendly search, secure login, and a smooth cart experience.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- item 4 -->
+                    <div class="service_item">
+                        <div class="text-xl font-bold flex items-center gap-3 md:text-2xl md:w-[40%]">
+                            <p class="text-primaryColorLight hover:text-whiteColor">04</p>
+                            <p>Travel</p>
+                        </div>
+                        <div class="ml-auto text-2xl origin-center rotate-45 md:order-last">
+                            <i class="fa-solid fa-arrow-right-long"></i>
+                        </div>
+                        <div class="md:max-w-[330px] lg:max-w-md xl:max-w-lg">
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Works-->
+        <section id="recent_works" class="container">
+            <div class="flex flex-col items-center gap-5 text-center">
+                <h2 class="subtitle">My Recent Works</h2>
+                <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that inspires
+                    both you and your customers.</p>
+            </div>
+            <div
+                class="relative w-max mx-auto my-10 h-10 text-xs grid grid-cols-4 items-center px-[3px] rounded-full bg-sectionColor dark:bg-darkSectionColor border border-primaryColor overflow-hidden transition md:h-12 md:text-base">
+                <!-- Indicator -->
+                <div
+                    class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-primaryColorLight md:h-11">
+                </div>
+                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6 text-whiteColor"
+                    data-tabs="all">All</button>
+                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="tech">Smart
+                    Tech</button>
+                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="food">Orders
+                    Food</button>
+                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6"
+                    data-tabs="travel">Travel</button>
+                <button class="tab relative block h-8 px-3 rounded-full md:h-10 md:px-6" data-tabs="app">App</button>
+            </div>
+            <div class="mt-6 relative rounded-3xl">
+                <!-- Blod -->
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
+                </div>
+                <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2">
+                    <!--Smart Tech -->
+                    <li
+                        class="work_card tech relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-1.jpg" alt="recent works" class="w-full">
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div
+                                class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-white p-5 rounded-t-2xl">
+                                <div class="">
+                                    <p class="text-2xl font-bold lg:text-3xl">Order Tech</p>
+                                    <p>I enhance electronics shopping with smart features and a seamless experience.</p>
+                                </div>
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Order Food -->
+                    <li
+                        class="work_card food relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-2.jpg" alt="recent works" class="w-full">
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div
+                                class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-white p-5 rounded-t-2xl">
+                                <div class="">
+                                    <p class="text-2xl font-bold lg:text-3xl">Order Food</p>
+                                    <p>I simplify food ordering with a user-friendly and responsive platform.</p>
+                                </div>
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!--Travel -->
+                    <li
+                        class="work_card travel relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-3.jpg" alt="recent works" class="w-full">
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div
+                                class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-white p-5 rounded-t-2xl">
+                                <div class="">
+                                    <p class="text-2xl font-bold lg:text-3xl">Travel</p>
+                                    <p>I simplify food ordering with a user-friendly and responsive platform.</p>
+                                </div>
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- App -->
+                    <li
+                        class="work_card app relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-4.jpg" alt="recent works" class="w-full">
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div
+                                class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-white p-5 rounded-t-2xl">
+                                <div class="">
+                                    <p class="text-2xl font-bold lg:text-3xl">App</p>
+                                    <p>I simplify food ordering with a user-friendly and responsive platform.</p>
+                                </div>
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <!-- Branding -->
+                    <li
+                        class="work_card branding relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
+                        <img src="images/project-5.jpg" alt="recent works" class="w-full">
+                        <div class="absolute left-0 right-0 bottom-[-100%] p-5 lg:p-8">
+                            <div
+                                class="flex items-center justify-between bg-gradient-to-r from-primaryColorLight to-primaryColor text-white p-5 rounded-t-2xl">
+                                <div class="">
+                                    <p class="text-2xl font-bold lg:text-3xl">Branding</p>
+                                    <p>I simplify food ordering with a user-friendly and responsive platform.</p>
+                                </div>
+                                <div class="text-2xl rotate-45">
+                                    <i class="fa-solid fa-arrow-right-long"></i>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- My education -->
+        <section id="exp_edu" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- Experience -->
+                <div class="">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
+                            <i class="fa-solid fa-medal"></i>
+                        </div>
+                        <h2 class="subtitle">Experience</h2>
+                    </div>
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card 1 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2024 - Present</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Web Development Intern</p>
+                            <p>Working on personal projects and improving skills in HTML, CSS, JavaScript, Boostrap and
+                                TailwindCSS.</p>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2023 - 2024</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">University Projects</p>
+                            <p>Completed various academic projects focused on responsive web design and e-commerce
+                                functionality.</p>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2022 - 2023</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Freelance Practice</p>
+                            <p>Developed small personal and freelance projects to gain real-world experience in web
+                                design and development.</p>
+                        </div>
+
+                        <!-- card 4 -->
+                        <div
+                            class="exp_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2023 - Present</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Web Development Intern</p>
+                            <p>Hands-on experience in building responsive websites with Bootstrap, integrating dynamic
+                                features using jQuery + Ajax, and developing database-driven applications using PHP and
+                                MySQL.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education -->
+                <div class="">
+                    <div class="flex items-center gap-3">
+                        <div class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+                        <h2 class="subtitle">Education</h2>
+                    </div>
+                    <div class="my-10 space-y-5 md:space-y-10">
+                        <!-- card 1 -->
+                        <div
+                            class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2020 - 2024</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Bachelor of Programming</p>
+                            <p>Văn Hiến University, Hồ Chí Minh</p>
+                        </div>
+
+                        <!-- card 2 -->
+                        <div
+                            class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2021 - 2022</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Web Development Basics</p>
+                            <p>Focused on HTML, CSS, JS, and Bootstrap</p>
+                        </div>
+
+                        <!-- card 3 -->
+                        <div
+                            class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2022 - 2023</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Backend Fundamentals</p>
+                            <p>Explored PHP, MySQL, jQuery, and Ajax</p>
+                        </div>
+
+                        <!-- card 4 -->
+                        <div
+                            class="edu_card exp_edu_card bg-whiteColor dark:bg-darkBodyColor p-5 rounded-2xl hover:bg-primaryColorLight dark:hover:bg-primaryColorLight duration-300">
+                            <p class="text-primaryColorLight text-sm font-bold pb-3">2023 - Present</p>
+                            <p class="text-xl font-bold uppercase lg:text-2xl xl:text-3xl">Advanced Frontend Development
+                            </p>
+                            <p>Specializing in Tailwind CSS and Vue.js</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- My skills -->
+        <section class="container" id="skills">
+            <div class="flex flex-col items-center gap-5 text-center">
+                <h2 class="subtitle">My skills</h2>
+                <p class="max-w-2xl">Delivering professional web solutions to elevate your digital presence.</p>
+            </div>
+        
+            <!-- Sử dụng grid layout với số cột linh hoạt -->
+            <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-5 mt-10">
+                <!-- HTML icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="html" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">HTML</p>
+                </div>
+        
+                <!-- CSS icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg" alt="css" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">CSS</p>
+                </div>
+        
+                <!-- JS icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/js.svg" alt="js" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">JS</p>
+                </div>
+        
+                <!-- Boostrap icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b2/Bootstrap_logo.svg" alt="boostrap" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Bootstrap</p>
+                </div>
+        
+                <!-- Tailwind icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="tailwind" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Tailwind</p>
+                </div>
+        
+                <!-- MySQL icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://download.logo.wine/logo/MySQL/MySQL-Logo.wine.png" alt="mysql" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">MySQL</p>
+                </div>
+        
+                <!-- Vue icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/95/Vue.js_Logo_2.svg" alt="vue" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Vue</p>
+                </div>
+        
+                <!-- WordPress icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="images/wp.svg" alt="wordpress" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">WordPress</p>
+                </div>
+        
+                <!-- JQuery icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/9/9e/JQuery_logo.svg" alt="jquery" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">JQuery</p>
+                </div>
+        
+                <!-- PHP icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/27/PHP-logo.svg" alt="php" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">PHP</p>
+                </div>
+
+                <!-- Ajax icon -->
+                <div class="skills_card w-full flex flex-col items-center">
+                    <div class="bg-sectionColor dark:bg-darkSectionColor grid place-items-center p-5 rounded-3xl space-y-5 grayscale-[85%] hover:grayscale-0 hover:bg-primaryColor border border-transparent hover:border-primaryColorLight duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/vi/7/79/Ajax_Amsterdam.svg" alt="ajax" class="max-w-[50px] h-[50px]">
+                    </div>
+                    <p class="text-center text-primaryColorLight mt-3 capitalize">Ajax</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- recent blog -->
+        <section id="blogs" class="bg-sectionColor dark:bg-darkSectionColor">
+            <div class="container">
+                <div class="flex flex-col items-center gap-5 text-center">
+                    <h2 class="subtitle">My skills</h2>
+                    <p class="max-w-2xl">Delivering professional web solutions to elevate your digital presence.</p>
+                </div>
+                <div class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 mt-10 px-5">
+                    <!-- blog 1 -->
+                    <div class="blog_card relative overflow-hidden rounded-3xl cursor-pointer">
+                        <img src="images/blog-1.jpg" alt="recent blog">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColor py-1 px-3 rounded-full">tutorial</p>
+                        <div class="blog_card_infor absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-regular fa-calendar-days"></i> 01/10/2022</p>
+                                <p><i class="fa-regular fa-comments">Comment (0)</i></p>
+                            </div>
+                            <p class="text-xl font-bold capitalize">top 10 ux/ui designers</p>
+                        </div>
+                    </div>
+
+                    <!-- blog 2 -->
+                    <div class="blog_card relative overflow-hidden rounded-3xl cursor-pointer">
+                        <img src="images/blog-2.jpg" alt="recent blog">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColor py-1 px-3 rounded-full">tips</p>
+                        <div class="blog_card_infor absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-regular fa-calendar-days"></i> 01/10/2022</p>
+                                <p><i class="fa-regular fa-comments">Comment (0)</i></p>
+                            </div>
+                            <p class="text-xl font-bold capitalize">App Development Guides</p>
+                        </div>
+                    </div>
+
+                    <!-- blog 3 -->
+                    <div class="blog_card relative overflow-hidden rounded-3xl cursor-pointer">
+                        <img src="images/blog-3.jpg" alt="recent blog">
+                        <p class="absolute top-3 left-3 uppercase text-sm bg-primaryColorLight text-whiteColor py-1 px-3 rounded-full">freebies</p>
+                        <div class="blog_card_infor absolute left-0 right-0 bottom-0 bg-whiteColor dark:bg-primaryColor mx-4 my-3 rounded-2xl space-y-1 p-3">
+                            <div class="text-primaryColorLight flex items-center gap-3 text-sm">
+                                <p><i class="fa-regular fa-calendar-days"></i> 01/10/2022</p>
+                                <p><i class="fa-regular fa-comments">Comment (0)</i></p>
+                            </div>
+                            <p class="text-xl font-bold capitalize">Learn graphic design free</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
