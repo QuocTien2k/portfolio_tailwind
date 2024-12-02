@@ -23,7 +23,7 @@
 <body>
     <!-- Header-->
     <header id="navbar"
-        class="fixed top-0 right-0 left-0 duration-300 z-[100] bg-sectionColor text-slate-800 dark:bg-transparent rounded-[8px] shadow-lg dark:shadow-2xl dark:text-slate-100">
+        class="fixed top-0 right-0 left-0 duration-300 z-[100] text-slate-800 shadow-lg dark:shadow-2xl dark:text-slate-100">
         <nav class="relative container flex justify-between items-center">
             <div class="py-5">
                 <img src="images/logo.png" alt="logo" id="logo" class="w-10 md:w-14">
@@ -84,14 +84,14 @@
                 </div>
                 <!-- content -->
                 <div class="flex items-center gap-5">
-                    <div class="space-y-2 md:w-1/2">
+                    <div class="hero__content space-y-2 md:w-1/2">
                         <h3 class="text-2xl font-bold md:text-3xl lg:text-4xl">I am Quoc Tien</h3>
                         <h1>
                             <span class="title">Intern Front End Website 2024 +</span>
                             <br>
                             <span class="title">Gamer</span>
                         </h1>
-                        <div class="relative md:hidden flex justify-center">
+                        <div class="hero__image relative md:hidden flex justify-center">
                             <!-- blob -->
                             <div
                                 class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
@@ -115,7 +115,7 @@
                         </div>
                     </div>
                     <!-- image in PC-->
-                    <div class="relative hidden md:w-1/2 md:flex justify-center">
+                    <div class="hero__image relative hidden md:w-1/2 md:flex justify-center">
                         <!-- blob -->
                         <div
                             class="absolute left-0 bottom-0 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
@@ -126,7 +126,7 @@
 
                 </div>
                 <!-- footer -->
-                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
+                <div class="hero__footer grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 py-10">
                     <div class="flex items-center gap-3">
                         <p class="text-5xl lg:text-6xl font-bold">0</p>
                         <p>
@@ -161,7 +161,7 @@
 
         <!-- My Quality Services -->
         <section id="quality_services" class="bg-sectionColor dark:bg-darkSectionColor">
-            <div class="container">
+            <div class="service__top container">
                 <div class="flex flex-col items-center gap-5 text-center">
                     <h2 class="subtitle">My Quality Services</h2>
                     <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that
@@ -233,36 +233,30 @@
 
         <!-- Recent Works-->
         <section id="recent_works" class="container">
-            <div class="flex flex-col items-center gap-5 text-center">
+            <div class="recent_works_top flex flex-col items-center gap-5 text-center">
                 <h2 class="subtitle">My Recent Works</h2>
                 <p class="max-w-2xl">We transform your ideas and desires into a distinctive web project that inspires
                     both you and your customers.</p>
             </div>
-            <div
-                class="relative w-full max-w-lg mx-auto my-10 h-10 text-xs flex items-center justify-between px-4 rounded-full bg-sectionColor dark:bg-darkSectionColor border border-primaryColor transition md:h-12 md:text-base">
+            <div class="recent_works_tabs tab-container relative w-full max-w-2xl mx-auto my-10 h-12 flex items-center bg-sectionColor dark:bg-primaryColor rounded-full overflow-hidden shadow-md">
                 <!-- Indicator -->
-                <div
-                    class="indicator absolute h-9 my-auto top-0 bottom-0 left-0 rounded-full bg-primaryColorLight transition-all duration-300 md:h-11">
-                </div>
-                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10 text-whiteColor"
-                    data-tabs="all">All</button>
-                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10" data-tabs="tech">Smart
-                    Tech</button>
-                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10" data-tabs="food">Orders
-                    Food</button>
-                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10"
-                    data-tabs="travel">Travel</button>
-                <button class="tab relative inline-block h-8 px-4 md:px-6 rounded-full md:h-10"
-                    data-tabs="app">App</button>
+                <div class="indicator absolute h-10 bg-primaryColorLight rounded-full transition-transform duration-300 ease-in-out"></div>            
+                <!-- Tabs -->
+                <button class="tab flex-1 relative z-10 h-full text-center font-medium text-gray-500 dark:text-whiteColor" data-tab="all">All</button>
+                <button class="tab flex-1 relative z-10 h-full text-center font-medium text-gray-500 dark:text-whiteColor" data-tab="tech">Tech</button>
+                <button class="tab flex-1 relative z-10 h-full text-center font-medium text-gray-500 dark:text-whiteColor" data-tab="food">Foods</button>
+                <button class="tab flex-1 relative z-10 h-full text-center font-medium text-gray-500 dark:text-whiteColor" data-tab="travel">Travel</button>
+                <button class="tab flex-1 relative z-10 h-full text-center font-medium text-gray-500 dark:text-whiteColor" data-tab="app">App</button>
+        
             </div>
-
+        
             <div class="mt-6 relative rounded-3xl">
                 <!-- Blod -->
                 <div
                     class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-80 h-80 bg-primaryColorLight mix-blend-screen rounded-full blur-[150px] opacity-50">
                 </div>
                 <ul class="grid grid-cols-1 gap-5 lg:gap-10 md:grid-cols-2">
-                    <!--Smart Tech -->
+                    <!--Tech -->
                     <li
                         class="work_card tech relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
                         <img src="images/project-1.jpg" alt="recent works" class="w-full">
@@ -280,7 +274,7 @@
                         </div>
                     </li>
 
-                    <!--Order Food -->
+                    <!--Food -->
                     <li
                         class="work_card food relative bg-sectionColor dark:bg-darkSectionColor p-5 rounded-2xl borderr border-transparent hover:border-primaryColor duration-300 overflow-hidden lg:p-8">
                         <img src="images/project-2.jpg" alt="recent works" class="w-full">
@@ -360,7 +354,7 @@
             <div class="container w-full grid grid-cols-1 md:grid-cols-2 gap-10">
                 <!-- Experience -->
                 <div class="">
-                    <div class="flex items-center gap-3">
+                    <div class="exp_top flex items-center gap-3">
                         <div class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
                             <i class="fa-solid fa-medal"></i>
                         </div>
@@ -408,7 +402,7 @@
 
                 <!-- Education -->
                 <div class="">
-                    <div class="flex items-center gap-3">
+                    <div class="edu_card flex items-center gap-3">
                         <div class="text-2xl text-primaryColorLight md:text-3xl lg:text-4xl">
                             <i class="fa-solid fa-graduation-cap"></i>
                         </div>
@@ -455,7 +449,7 @@
 
         <!-- My skills -->
         <section class="container" id="skills">
-            <div class="flex flex-col items-center gap-5 text-center">
+            <div class="skills_top flex flex-col items-center gap-5 text-center">
                 <h2 class="subtitle">My skills</h2>
                 <p class="max-w-2xl">Delivering professional web solutions to elevate your digital presence.</p>
             </div>
@@ -575,7 +569,7 @@
         <!-- recent blog -->
         <section id="blogs" class="bg-sectionColor dark:bg-darkSectionColor">
             <div class="container">
-                <div class="flex flex-col items-center gap-5 text-center">
+                <div class="blog_top flex flex-col items-center gap-5 text-center">
                     <h2 class="subtitle">Blogs</h2>
                     <p class="max-w-2xl">Delivering professional web solutions to elevate your digital presence.</p>
                 </div>
@@ -637,7 +631,7 @@
                 <!-- Content -->
                 <div class="flex-1 space-y-7 md:space-y-10 lg:pl-20 xl:pl-40">
                     <!-- Phone -->
-                    <div class="flex items-start gap-4">
+                    <div class="contact_item flex items-start gap-4">
                         <div
                             class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center">
                             <i class="fa-solid fa-phone"></i>
@@ -649,7 +643,7 @@
                     </div>
 
                     <!-- Email -->
-                    <div class="flex items-start gap-4">
+                    <div class="contact_item flex items-start gap-4">
                         <div
                             class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center">
                             <i class="fa-regular fa-envelope"></i>
@@ -662,7 +656,7 @@
                     </div>
 
                     <!-- Address -->
-                    <div class="flex items-start gap-4">
+                    <div class="contact_item flex items-start gap-4">
                         <div
                             class="text-whiteColor bg-gradient-to-b from-primaryColor to-primaryColorLight h-10 w-10 lg:h-14 lg:w-14 rounded-full grid place-items-center">
                             <i class="fa-solid fa-phone"></i>
@@ -677,7 +671,7 @@
 
                 <!-- Contact form-->
                 <form
-                    class="flex-1 bg-sectionColor dark:bg-darkSectionColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3">
+                    class="contact_form flex-1 bg-sectionColor dark:bg-darkSectionColor border border-primaryColor px-5 py-10 rounded-3xl space-y-3">
                     <!-- Subtitle & description -->
                     <div class="flex flex-col">
                         <h2 class="subtitle">Let's work together</h2>
@@ -744,13 +738,16 @@
         </div>
     </footer>
 
-    <a href="#" id="scroll-up" class="fixed right-10 bottom-4 bg-primaryColor px-2 py-1 rounded-full text-lg text-whiteColor z-[9999] hover:-translate-y-1 ease-in duration-200 md:px-4 md:py-2">
+    <!-- Scroll Up -->
+    <a href="#" id="scroll-up"
+        class="fixed right-10 bottom-4 bg-primaryColor px-2 py-1 rounded-full text-lg text-whiteColor z-[9999] hover:-translate-y-1 ease-in duration-200 md:px-4 md:py-2">
         <i class="fa-solid fa-arrow-up"></i>
     </a>
-    
-    
-    
 
+
+    <!--Scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Custom JS -->
     <script src="js/main.js"></script>
 </body>
 
